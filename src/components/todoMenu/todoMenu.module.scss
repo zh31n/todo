@@ -1,0 +1,90 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background: rgba(8, 19, 107, 0.64);
+
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 400;
+  color: white;
+}
+
+.todos {
+  max-height: 70%;
+  overflow: auto;
+
+}
+
+.todo {
+  border-radius: 20px;
+  width: 700px;
+  max-height: 400px;
+  //min-height: 400px;
+  background: white;
+  overflow: hidden;
+
+  .nav{
+    height: 50px;
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .countTodosNotIsDone{
+
+    }
+  }
+}
+
+.addingInp {
+  width: 100%;
+  border-bottom: 1px solid black;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  input {
+    width: 80%;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .plus {
+    font-weight: 400;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+
+
+
+}
+
+.chooseButtons{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clearBtn{
+  width: auto;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #131128;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  outline: 0 !important;
+}
